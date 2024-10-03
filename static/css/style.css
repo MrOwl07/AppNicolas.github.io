@@ -99,6 +99,27 @@ form {
     cursor: pointer;
 }
 
+.top-bar, .bottom-bar {
+    background-color: #b0c4de;
+    height: 50px;
+}
+
+.thank-you {
+    margin-top: 20px;
+}
+
+.thank-you-icon {
+    width: 100px;
+    height: auto;
+}
+
+.thank-you-text {
+    font-size: 1.5em;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* Responsive styles */
 @media (max-width: 600px) {
     .summary, .driver-info, .feedback {
         width: 90%;

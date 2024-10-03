@@ -1,29 +1,21 @@
 document.addEventListener('DOMContentLoaded', () => {
     const stars = document.querySelectorAll('.rating label');
-    stars.forEach(star => {
-        star.addEventListener('click', () => {
-            const ratingValue = star.previousElementSibling.value;
-            console.log(`Calificación seleccionada: ${ratingValue} estrellas`);
-        });
-    });
-
-    const modalContainer = document.getElementById("modalContainer");
-    const modal = document.getElementById("myModal");
     const btn = document.querySelector("button[type='submit']");
-    const span = document.getElementsByClassName("close")[0];
 
-    btn.addEventListener('click', (event) => {
-        event.preventDefault();
-        modalContainer.style.display = "block";
+    stars.forEach(star => {
+        star.addEventListener('click', handleStarClick);
     });
 
-    span.onclick = function() {
-        modalContainer.style.display = "none";
+    btn.addEventListener('click', handleSubmit);
+
+    function handleStarClick() {
+        const ratingValue = this.previousElementSibling.value;
+        console.log(`Calificación seleccionada: ${ratingValue} estrellas`);
     }
 
-    window.onclick = function(event) {
-        if (event.target == modalContainer) {
-            modalContainer.style.display = "none";
-        }
+    function handleSubmit(event) {
+        event.preventDefault();
+        // Redirigir a la página end.html
+        window.location.href = 'end.html';
     }
 });
