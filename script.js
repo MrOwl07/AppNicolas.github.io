@@ -1,4 +1,3 @@
-// script.js
 document.addEventListener('DOMContentLoaded', () => {
     const stars = document.querySelectorAll('.rating label');
     stars.forEach(star => {
@@ -8,7 +7,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Modal functionality
     const modalContainer = document.getElementById("modalContainer");
     const modal = document.getElementById("myModal");
     const btn = document.querySelector("button[type='submit']");
