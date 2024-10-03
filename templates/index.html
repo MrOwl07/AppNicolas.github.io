@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalización de Viaje - DiDi</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Gracias por viajar con DiDi</h1>
+    </header>
+    <main>
+        <section class="summary">
+            <h2>Resumen del Viaje</h2>
+            <p>Distancia: 10 km</p>
+            <p>Duración: 20 minutos</p>
+            <p>Costo: $15.00</p>
+        </section>
+        <section class="driver-info">
+            <div class="driver-photo-container">
+                <img src="https://images.ctfassets.net/n7hs0hadu6ro/3kLf3dKwYeJVXvef4V5xx9/92f501cd126e4b5d86f9d6895d93b32b/animation_driver.gif" alt="Foto del conductor" class="driver-photo">
+            </div>
+            <div class="driver-description">
+                <h2>Nombre del Conductor</h2>
+                <p>Descripción breve del conductor.</p>
+            </div>
+        </section>
+        <section class="feedback">
+            <h2>Califica tu Viaje</h2>
+            <form id="feedbackForm">
+                <div class="rating">
+                    <input type="radio" id="star5" name="rating" value="5"><label for="star5" title="5 estrellas">★</label>
+                    <input type="radio" id="star4" name="rating" value="4"><label for="star4" title="4 estrellas">★</label>
+                    <input type="radio" id="star3" name="rating" value="3"><label for="star3" title="3 estrellas">★</label>
+                    <input type="radio" id="star2" name="rating" value="2"><label for="star2" title="2 estrellas">★</label>
+                    <input type="radio" id="star1" name="rating" value="1"><label for="star1" title="1 estrella">★</label>
+                </div>
+                <label for="comments">Comentarios:</label>
+                <textarea id="comments" name="comments"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Modal -->
+    <div id="modalContainer">
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close"></span>
+                <p>TEN UN BUEN DÍA... viaje finalizado</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html>
