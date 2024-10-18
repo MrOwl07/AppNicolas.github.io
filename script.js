@@ -16,6 +16,10 @@ document.addEventListener('DOMContentLoaded', () => {
     function handleSubmit(event) {
         event.preventDefault();
         // Redirigir a la página end.html
-        window.location.href = 'end.html';
+        window.location.href = 'templates/end.html';
     }
 });
+               
+
+
+
